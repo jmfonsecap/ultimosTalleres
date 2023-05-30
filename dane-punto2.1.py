@@ -1,5 +1,4 @@
 from mrjob.job import MRJob
-
 class MinMaxStockPrice(MRJob):
     def mapper(self, _, line):
         for w in line.split():
