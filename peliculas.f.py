@@ -38,7 +38,7 @@ class DayHighestRating(MRJob):
     def steps(self):
         return [
             MRStep(mapper=self.mapper, reducer=self.reducer),
-            MRStep(reducer=self.find_lowest_average_rating)
+            MRStep(reducer=self.find_highest_average_rating)
         ]
 
 if __name__ == '__main__':

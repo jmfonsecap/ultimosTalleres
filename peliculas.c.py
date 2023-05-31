@@ -30,7 +30,7 @@ class DayLessviews(MRJob):
         return [
             MRStep(mapper=self.mapper,
                    reducer=self.reducer),
-            MRStep(reducer=self.find_max_views)
+            MRStep(reducer=self.find_min_views)
         ]
 
 if __name__ == '__main__':
