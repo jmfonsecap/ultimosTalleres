@@ -108,11 +108,12 @@ Resultado
 
         1. El salario promedio por Sector Económico (SE)
         El programa se llama dane-punto1.1.py y el resultado estara en el folder /user/admin/reto/punto1/punto1
-	
 	resultado
+	
         2. El salario promedio por Empleado
         El programa se llama dane-punto1.2.py y el resultado estara en el folder /user/admin/reto/punto1/punto2
 	resultado
+	
         3. Número de SE por Empleado que ha tenido a lo largo de la estadística
 	El programa se llama dane-punto1.3.py y el resultado estara en el folder /user/admin/reto/punto1/punto3
 	resultado
@@ -132,9 +133,11 @@ Resultado
         1. Por acción, dia-menor-valor, día-mayor-valor
         El programa se llama dane-punto2.1 y el resultado estara en el folder /user/admin/reto/punto2/punto1
 	resultado
+	
         2. Listado de acciones que siempre han subido o se mantienen estables.
         El programa se llama dane-punto2.2 y el resultado estara en el folder /user/admin/reto/punto2/punto3
 	resultado
+	
 	3. DIA NEGRO: Saque el día en el que la mayor cantidad de acciones tienen el menor valor de acción (DESPLOME), suponga una inflación independiente del tiempo.
 	El programa se llama dane-punto2.3 y el resultado estara en el folder /user/admin/reto/punto2/punto3
 	resultado
@@ -156,15 +159,19 @@ Resultado
         a. Número de películas vista por un usuario, valor promedio de calificación
         El programa se llama peliculas.a y el resultado estara en el folder /user/admin/reto/punto3/puntoa
 	resultado
+	
         b. Día en que más películas se han visto
         El programa se llama peliculas.b y el resultado estara en el folder /user/admin/reto/punto3/puntob
 	resultado
+	
         c. Día en que menos películas se han visto
         El programa se llama peliculas.c y el resultado estara en el folder /user/admin/reto/punto2/puntoc
 	resultado
+	
 	d. Número de usuarios que ven una misma película y el rating promedio
         El programa se llama peliculas.d y el resultado estara en el folder /user/admin/reto/punto2/puntod
 	resultado
+	
 	e. Día en que peor evaluación en promedio han dado los usuarios
         El programa se llama peliculas.e y el resultado estara en el folder /user/admin/reto/punto2/puntoe
 	resultado
