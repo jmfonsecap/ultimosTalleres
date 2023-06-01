@@ -214,10 +214,12 @@
         El programa se llama peliculas.e y el resultado estara en el folder /user/admin/reto/punto2/puntoe
 	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3e.jpeg)
+	
 	f. Día en que mejor evaluación han dado los usuarios
         El programa se llama peliculas.f y el resultado estara en el folder /user/admin/reto/punto2/puntof
 	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3f.jpeg)
+	
 	g. La mejor y peor película evaluada por genero
         El programa se llama peliculas.g y el resultado estara en el folder /user/admin/reto/punto2/puntog
 	
