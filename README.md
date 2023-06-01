@@ -192,10 +192,6 @@
     115,265,2,accion,2014-03-20
     253,465,5,accion,2014-03-20
     305,451,3,accion,2014-03-20
-    …
-    …
-
-    * Realizar un programa en Map/Reduce, con hadoop en Python, que permita calcular:
 
         a. Número de películas vista por un usuario, valor promedio de calificación
         El programa se llama peliculas.a y el resultado estara en el folder /user/admin/reto/punto3/puntoa
