@@ -82,7 +82,8 @@
 ```
 
 * Se altero la linea de codigo ya que no tenia permiso de creación
-!![Imagen resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/ResultadoLocalSinMrJob.jpeg)
+
+![Imagen resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/ResultadoLocalSinMrJob.jpeg)
 
 * Ahora, se instala python3 y mrjob.
 
@@ -97,6 +98,7 @@
 	cd wordcount
 	python wordcount-mr.py ./datasets/gutenberg-small/*.txt
 ````
+
 ![Resultado local](https://github.com/jmfonsecap/ultimosTalleres/blob/main/resultadoWordCountlocal.jpeg)
 * Ahora hacemos el segundo reto propuesto
 * Para eso tenemos que copiar el dataset en nuestro emr
@@ -109,6 +111,7 @@
 ```sh
 	python wordcount-mr.py hdfs:///user/admin/datasets/gutenberg-small/*.txt -r hadoop --output-dir hdfs:///user/admin/result3 
 ```
+
 ![Resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/resultadoWordCountMrJob.jpeg)
 
 * Y ese es el reto 2!
@@ -140,14 +143,17 @@
 
         1. El salario promedio por Sector Económico (SE)
         El programa se llama dane-punto1.1.py y el resultado estara en el folder /user/admin/reto/punto1/punto1
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.1.jpeg)
 	
         2. El salario promedio por Empleado
         El programa se llama dane-punto1.2.py y el resultado estara en el folder /user/admin/reto/punto1/punto2
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.2.jpeg)
 	
         3. Número de SE por Empleado que ha tenido a lo largo de la estadística
 	El programa se llama dane-punto1.3.py y el resultado estara en el folder /user/admin/reto/punto1/punto3
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.3.jpeg)
 
 2. Se tiene un conjunto de acciones de la bolsa, en la cual se reporta a diario el valor promedio por acción, la estructura de los datos es (archivo: dataempresas.csv):
@@ -164,14 +170,17 @@
 
         1. Por acción, dia-menor-valor, día-mayor-valor
         El programa se llama dane-punto2.1 y el resultado estara en el folder /user/admin/reto/punto2/punto1
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.1.jpeg)
 	
         2. Listado de acciones que siempre han subido o se mantienen estables.
         El programa se llama dane-punto2.2 y el resultado estara en el folder /user/admin/reto/punto2/punto3
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.2.jpeg)
 	
 	3. DIA NEGRO: Saque el día en el que la mayor cantidad de acciones tienen el menor valor de acción (DESPLOME), suponga una inflación independiente del tiempo.
 	El programa se llama dane-punto2.3 y el resultado estara en el folder /user/admin/reto/punto2/punto3
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.3.jpeg)
 
 3. Sistema de evaluación de películas (archivo: datapeliculas.csv): Se tiene un conjunto de datos en el cual se evalúan las películas con un rating, con la siguiente estructura:
@@ -190,28 +199,35 @@
 
         a. Número de películas vista por un usuario, valor promedio de calificación
         El programa se llama peliculas.a y el resultado estara en el folder /user/admin/reto/punto3/puntoa
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3a.jpeg)
 	
         b. Día en que más películas se han visto
         El programa se llama peliculas.b y el resultado estara en el folder /user/admin/reto/punto3/puntob
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3b.jpeg)
 	
         c. Día en que menos películas se han visto
         El programa se llama peliculas.c y el resultado estara en el folder /user/admin/reto/punto2/puntoc
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3c.jpeg)
 	
 	d. Número de usuarios que ven una misma película y el rating promedio
         El programa se llama peliculas.d y el resultado estara en el folder /user/admin/reto/punto2/puntod
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3d.jpeg)
 	
 	e. Día en que peor evaluación en promedio han dado los usuarios
         El programa se llama peliculas.e y el resultado estara en el folder /user/admin/reto/punto2/puntoe
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3e.jpeg)
 	f. Día en que mejor evaluación han dado los usuarios
         El programa se llama peliculas.f y el resultado estara en el folder /user/admin/reto/punto2/puntof
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3f.jpeg)
 	g. La mejor y peor película evaluada por genero
         El programa se llama peliculas.g y el resultado estara en el folder /user/admin/reto/punto2/puntog
+	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3g.jpeg)
 
 
