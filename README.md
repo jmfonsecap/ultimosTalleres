@@ -1,39 +1,67 @@
 # Curso ST0263 Tópicos Especiales en Telemática
 # Realizacion laboratorio 5
 * Se crea un bucket s3 como se indica
-Imagen de bucket
+![Imagen de bucket](https://github.com/jmfonsecap/ultimosTalleres/blob/main/s3.jpeg)
 
 * Luego se crea el cluster EMR como se especifica en el laboratorio
-Imagen de creacion EMR
+
+
+![Imagen de creacion EMR](https://github.com/jmfonsecap/ultimosTalleres/blob/main/summary1.jpeg)
+
+
+![Imagen de creacion EMR](https://github.com/jmfonsecap/ultimosTalleres/blob/main/summary2.jpeg)
+
+
+![Imagen de creacion EMR](https://github.com/jmfonsecap/ultimosTalleres/blob/main/summary3.jpeg)
+
+
+![Imagen de creacion EMR](https://github.com/jmfonsecap/ultimosTalleres/blob/main/summary4.jpeg)
+
+
+![Imagen de creacion EMR](https://github.com/jmfonsecap/ultimosTalleres/blob/main/summary5.jpeg)
 
 * Ahora se hacce la conexion con hadoop como indicado
-Imagen cmd hadoop
+![Imagen cmd hadoop](https://github.com/jmfonsecap/ultimosTalleres/blob/main/ConectarseaEMR.jpeg)
 
 * Y se levanta el tunel para accederlo desde la interfaz web
-Imagen cmd levantamiento tunel
-Imagen conexion hadoop via web
+![Imagen cmd levantamiento tunel](https://github.com/jmfonsecap/ultimosTalleres/blob/main/abrirtunel.jpeg)
+
+![Imagen conexion hadoop via web](https://github.com/jmfonsecap/ultimosTalleres/blob/main/hueConsole.jpeg)
+
+
 * Ahora se crea test con el archivo text1.txt
-Imagen text1
-Imagen test desde consola
+
+![Imagen text1](https://github.com/jmfonsecap/ultimosTalleres/blob/main/crear.textHue.jpeg)
+
+
+![Imagen test desde consola](https://github.com/jmfonsecap/ultimosTalleres/blob/main/lsUserAdmin.jpeg)
+
+![a](https://github.com/jmfonsecap/ultimosTalleres/blob/main/lsTest.jpeg)
 
 * Ahora se crea el test2 desde consola con el archivo file2.txt
-Imagen text2 desde la consola
 
+![Imagen text2 desde la consola](https://github.com/jmfonsecap/ultimosTalleres/blob/main/lsAdmin.jpeg)
+
+![Imagen text2 desde la consola](https://github.com/jmfonsecap/ultimosTalleres/blob/main/CopyFromLocal.jpeg)
+
+![Imagen text2 desde la consola](https://github.com/jmfonsecap/ultimosTalleres/blob/main/lsTest2.jpeg)
 * Y ya esta el laboratorio 5!
 
 
 # Laboratorio: Map/Reduce en Python con MRJOB.
 * Primero realizaremos el primer reto que es el despliegue del EMR via AWS CLI. Para esto debemos instalar AWS
-Instalacion AWS
+![Instalacion AWS](https://github.com/jmfonsecap/ultimosTalleres/blob/main/InstallAWS.jpeg)
 * Ahora se debe configurar las credenciales para que se pueda crear el cluster. Esto lo haremos metiendonos al learner lab, undiendo AWS details y yendo a AWS CLI
-Imagen aws CLI
+![Imagen aws CLI](https://github.com/jmfonsecap/ultimosTalleres/blob/main/AWSCLICredentials.jpeg)
 * Ahora esto se debe copiar y pegar en  ~/.aws/credentials
-Imagen credentials
+![Imagen credentials](https://github.com/jmfonsecap/ultimosTalleres/blob/main/Credentials.jpeg)
 * Luego deberomos correr el siguiente comando
 ```sh
      aws emr create-cluster --release-label emr-6.10.0 --instance-type m4.large --instance-count 3 --log-uri s3://jmfonsecap-lab-emr/logs --use-default-roles --ec2-attributes KeyName=emr-key,SubnetId=subnet-0386f1f316823a038 --no-termination-protected
 ```
 * Se debe de tener en cuenta que en el log-url se pone la url correspondiente al log de s3, el KeyName debe ser la .pem que creamos y la subnet debe ser de la vpc.
+
+![Cluster CLI](https://github.com/jmfonsecap/ultimosTalleres/blob/main/ClusterCLI.jpeg)
 * Ya debemos esperar a que el emr despliegue y que este en estado "waiting"
 * Cuando este listo, nos conectamos por medio del siguiente comando
 ```sh
@@ -44,9 +72,7 @@ Imagen credentials
 ```sh
       sudo yum install git
 ```
-* Luego se debe copiar el repositorio del laboratorio
-Imagen repositorio
-* Y se debe acceder a la carpeta wordcount y correr los comandos dados en el laboratorio
+* Luego se debe copiar el repositorio del laboratorio y se debe acceder a la carpeta wordcount y correr los comandos dados en el laboratorio
 ```sh
      cd st0263-2023-1/Laboratorio\ N6-MapReduce/wordcount/
      python wordcount-local.py /home/hadoop/st0263-2023-1/datasets/gutenberg-small/*.txt | sudo tee salida-serial.txt > /dev/null
@@ -54,7 +80,7 @@ Imagen repositorio
 ```
 
 * Se altero la linea de codigo ya que no tenia permiso de creación
-Imagen resultado
+!![Imagen resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/ResultadoLocalSinMrJob.jpeg)
 
 * Ahora, se instala python3 y mrjob.
 
@@ -69,7 +95,7 @@ Imagen resultado
 	cd wordcount
 	python wordcount-mr.py ./datasets/gutenberg-small/*.txt
 ````
-
+![Resultado local](https://github.com/jmfonsecap/ultimosTalleres/blob/main/resultadoWordCountlocal.jpeg)
 * Ahora hacemos el segundo reto propuesto
 * Para eso tenemos que copiar el dataset en nuestro emr
 *
@@ -81,14 +107,18 @@ Imagen resultado
 ```sh
 	python wordcount-mr.py hdfs:///user/admin/datasets/gutenberg-small/*.txt -r hadoop --output-dir hdfs:///user/admin/result3 
 ```
-Resultado
+![Resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/resultadoWordCountMrJob.jpeg)
 
 * Y ese es el reto 2!
 
 # Reto de Programación en Map/Reduce
 
 * Los retos se resuelven con los programas que estan en este repositorio. Pero para eso debemos clonarlo al EMR
-
+* Luego entonces se va a la carpeta del repositorio
+```sh
+	cd ultimosTalleres
+````
+* Y a partir de ahi podemos comenzar a correr los comandos
 
 1. Se tiene un conjunto de datos, que representan el salario anual de los empleados formales en Colombia por sector económico, según la DIAN. [datasets de ejemplo](../datasets/otros)
 
@@ -108,15 +138,15 @@ Resultado
 
         1. El salario promedio por Sector Económico (SE)
         El programa se llama dane-punto1.1.py y el resultado estara en el folder /user/admin/reto/punto1/punto1
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.1.jpeg)
 	
         2. El salario promedio por Empleado
         El programa se llama dane-punto1.2.py y el resultado estara en el folder /user/admin/reto/punto1/punto2
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.2.jpeg)
 	
         3. Número de SE por Empleado que ha tenido a lo largo de la estadística
 	El programa se llama dane-punto1.3.py y el resultado estara en el folder /user/admin/reto/punto1/punto3
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.3.jpeg)
 
 2. Se tiene un conjunto de acciones de la bolsa, en la cual se reporta a diario el valor promedio por acción, la estructura de los datos es (archivo: dataempresas.csv):
 
@@ -132,15 +162,15 @@ Resultado
 
         1. Por acción, dia-menor-valor, día-mayor-valor
         El programa se llama dane-punto2.1 y el resultado estara en el folder /user/admin/reto/punto2/punto1
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.1.jpeg)
 	
         2. Listado de acciones que siempre han subido o se mantienen estables.
         El programa se llama dane-punto2.2 y el resultado estara en el folder /user/admin/reto/punto2/punto3
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.2.jpeg)
 	
 	3. DIA NEGRO: Saque el día en el que la mayor cantidad de acciones tienen el menor valor de acción (DESPLOME), suponga una inflación independiente del tiempo.
 	El programa se llama dane-punto2.3 y el resultado estara en el folder /user/admin/reto/punto2/punto3
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.3.jpeg)
 
 3. Sistema de evaluación de películas (archivo: datapeliculas.csv): Se tiene un conjunto de datos en el cual se evalúan las películas con un rating, con la siguiente estructura:
 
@@ -158,29 +188,29 @@ Resultado
 
         a. Número de películas vista por un usuario, valor promedio de calificación
         El programa se llama peliculas.a y el resultado estara en el folder /user/admin/reto/punto3/puntoa
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3a.jpeg)
 	
         b. Día en que más películas se han visto
         El programa se llama peliculas.b y el resultado estara en el folder /user/admin/reto/punto3/puntob
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3b.jpeg)
 	
         c. Día en que menos películas se han visto
         El programa se llama peliculas.c y el resultado estara en el folder /user/admin/reto/punto2/puntoc
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3c.jpeg)
 	
 	d. Número de usuarios que ven una misma película y el rating promedio
         El programa se llama peliculas.d y el resultado estara en el folder /user/admin/reto/punto2/puntod
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3d.jpeg)
 	
 	e. Día en que peor evaluación en promedio han dado los usuarios
         El programa se llama peliculas.e y el resultado estara en el folder /user/admin/reto/punto2/puntoe
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3e.jpeg)
 	f. Día en que mejor evaluación han dado los usuarios
         El programa se llama peliculas.f y el resultado estara en el folder /user/admin/reto/punto2/puntof
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3f.jpeg)
 	g. La mejor y peor película evaluada por genero
         El programa se llama peliculas.g y el resultado estara en el folder /user/admin/reto/punto2/puntog
-	resultado
+	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto3g.jpeg)
 
 
 
