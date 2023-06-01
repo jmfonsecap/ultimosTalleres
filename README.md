@@ -163,8 +163,7 @@
     exito,80,2015-01-02
     EPM,22,2015-01-02
    
-
-        1. Por acción, dia-menor-valor, día-mayor-valor
+   1. Por acción, dia-menor-valor, día-mayor-valor
         
 	El programa se llama dane-punto2.1 y el resultado estara en el folder /user/admin/reto/punto2/punto1
 	
