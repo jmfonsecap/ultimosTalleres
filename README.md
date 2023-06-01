@@ -52,8 +52,10 @@
 * Primero realizaremos el primer reto que es el despliegue del EMR via AWS CLI. Para esto debemos instalar AWS
 ![Instalacion AWS](https://github.com/jmfonsecap/ultimosTalleres/blob/main/InstallAWS.jpeg)
 * Ahora se debe configurar las credenciales para que se pueda crear el cluster. Esto lo haremos metiendonos al learner lab, undiendo AWS details y yendo a AWS CLI
+
 ![Imagen aws CLI](https://github.com/jmfonsecap/ultimosTalleres/blob/main/AWSCLICredentials.jpeg)
 * Ahora esto se debe copiar y pegar en  ~/.aws/credentials
+
 ![Imagen credentials](https://github.com/jmfonsecap/ultimosTalleres/blob/main/Credentials.jpeg)
 * Luego deberomos correr el siguiente comando
 ```sh
