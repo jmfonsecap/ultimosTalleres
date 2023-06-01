@@ -1,4 +1,3 @@
-
 from mrjob.job import MRJob
 
 class AverageSalaryPerSececon(MRJob):
