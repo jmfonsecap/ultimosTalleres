@@ -5,10 +5,7 @@ class DayLowestRating(MRJob):
     def mapper(self, _, line):
         for w in line.split():
             filing = w.split(',')
-            user = filing[0]
-            movie = filing[1] 
             rating = filing[2]
-            genre = filing[3]
             date = filing[4]
             yield date, float(rating)
 
