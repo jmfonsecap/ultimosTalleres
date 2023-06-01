@@ -1,4 +1,8 @@
 # Curso ST0263 Tópicos Especiales en Telemática
+#Realizacion laboratorio 5
+
+
+
 # Laboratorio: Map/Reduce en Python con MRJOB.
 
 * Despliegue un cluster EMR en su cuenta de AWS Academy, teniendo en cuenta la guia para esto. En este enlace, encuentra la documentación de AWS EMR (https://docs.aws.amazon.com/emr/index.html)
