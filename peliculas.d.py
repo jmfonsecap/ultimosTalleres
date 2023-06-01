@@ -4,11 +4,8 @@ class UsersPerMovieAndReviews(MRJob):
         # Divide cada línea en campos separados por coma
         for w in line.split():
             filing = w.split(',')
-            user= filing[0]
             movie= filing[1] 
             rating= filing[2]
-            genre= filing[3]
-            date= filing[4]
             yield movie, float(rating)
 
     def reducer(self, key, values):
