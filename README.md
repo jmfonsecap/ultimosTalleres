@@ -139,7 +139,7 @@
         1115,1412,76000,1981
         1116,1412,76000,1982
 	
-      1. El salario promedio por Sector Económico (SE)
+     1. El salario promedio por Sector Económico (SE)
         El programa se llama dane-punto1.1.py y el resultado estara en el folder /user/admin/reto/punto1/punto1
 	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.1.jpeg)
