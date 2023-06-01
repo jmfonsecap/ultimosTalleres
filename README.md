@@ -139,8 +139,6 @@
         1115,1412,76000,1981
         1116,1412,76000,1982
 
-    *  Realizar un programa en Map/Reduce, con hadoop en Python, que permita calcular:
-
         1. El salario promedio por Sector Económico (SE)
         El programa se llama dane-punto1.1.py y el resultado estara en el folder /user/admin/reto/punto1/punto1
 	
@@ -164,12 +162,11 @@
     EPM,23,2015-01-01
     exito,80,2015-01-02
     EPM,22,2015-01-02
-    …
-
-    * Realizar un programa en Map/Reduce, con hadoop en Python, que permita calcular:
+   
 
         1. Por acción, dia-menor-valor, día-mayor-valor
-        El programa se llama dane-punto2.1 y el resultado estara en el folder /user/admin/reto/punto2/punto1
+        
+	El programa se llama dane-punto2.1 y el resultado estara en el folder /user/admin/reto/punto2/punto1
 	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.1.jpeg)
 	
@@ -179,6 +176,7 @@
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.2.jpeg)
 	
 	3. DIA NEGRO: Saque el día en el que la mayor cantidad de acciones tienen el menor valor de acción (DESPLOME), suponga una inflación independiente del tiempo.
+	
 	El programa se llama dane-punto2.3 y el resultado estara en el folder /user/admin/reto/punto2/punto3
 	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.3.jpeg)
