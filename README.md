@@ -138,8 +138,8 @@
         1115,1212,77000,1980
         1115,1412,76000,1981
         1116,1412,76000,1982
-
-        1. El salario promedio por Sector Económico (SE)
+	
+      1. El salario promedio por Sector Económico (SE)
         El programa se llama dane-punto1.1.py y el resultado estara en el folder /user/admin/reto/punto1/punto1
 	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto1.1.jpeg)
@@ -175,7 +175,7 @@
 	
 	![resultado](https://github.com/jmfonsecap/ultimosTalleres/blob/main/punto2.2.jpeg)
 	
-	3. DIA NEGRO: Saque el día en el que la mayor cantidad de acciones tienen el menor valor de acción (DESPLOME), suponga una inflación independiente del tiempo.
+3. DIA NEGRO: Saque el día en el que la mayor cantidad de acciones tienen el menor valor de acción (DESPLOME), suponga una inflación independiente del tiempo.
 	
 	El programa se llama dane-punto2.3 y el resultado estara en el folder /user/admin/reto/punto2/punto3
 	
